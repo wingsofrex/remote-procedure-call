@@ -2,8 +2,10 @@
 This lab demonstrates Remote Procedure Call used in Distributed Computing Environment
 
 # Tools
-# Programming Language # : Python
-# IDE / Platform # : VSCode
+Programming Language: Python
+IDE / Platform: VSCode
+Framework: Flask
+CLI: PIP
 
 # What are we trying to do here
 Here, we implement a simple distributed system with one client (CLIENT) and two servers (SERVER1 and SERVER 2). Two servers SERVER1 and SERVER 2 are used as file servers and contains same set of files (one is replica of another).  Note that there may be delay in updating the servers. 
@@ -40,7 +42,7 @@ In the third terminal, type:
 # python client.py #
 
 Once you run client.py, here is what you may see. Note that I have used Python Virtual Environment for this task. You are free to use whichever tool you want to use.
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------#
 
 (.venv) $ python client.py
 Enter file pathname: hello.txt
@@ -53,6 +55,11 @@ Enter file pathname: data.txt
 (.venv) $ python client.py
 Enter file pathname: hero.txt
 File not found on any server.
+
+# -------------------------------------------------------------------------------------- #
+
+# Note #
+Converted the process into a Web App
 
 (.venv) $ python client.py
 Enter file pathname: hello.txt
